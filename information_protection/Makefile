@@ -3,7 +3,7 @@
 
 # Настройки компилятора
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99 -O2
+CFLAGS = -Wall -Wextra -std=c99 -O2 -fopenmp
 DEBUG_FLAGS = -g -DDEBUG
 INCLUDES = -Iinclude
 
@@ -144,7 +144,6 @@ check:
 
 # Очистка содержимого temp, но не удаление папки
 clean-temp:
-	@echo "Очистка содержимого $(TEMP_DIR)..."
 	@rm -f $(TEMP_DIR)/*
 
 # Очистка

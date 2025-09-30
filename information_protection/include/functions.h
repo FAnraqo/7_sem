@@ -62,4 +62,14 @@ long long Shamir_encrypt(long long m, long long p,
 long long Shamir_decrypt(long long x_1, long long p,
                         long long D_a, long long D_b);
 
+long long mod_inverse(long long a, long long m);
+
+long long NOD(long long a, long long b);
+
+int Manual_input_shamir(long long *p, long long *C_a, long long *C_b);
+
+int Automatic_input_shamir(const char *filepath_in, long long *best_p, long long *best_Ca, long long *best_Cb);
+
+int Encrypt_Decrypt_shamir(const char *filepath_in, long long p, long long C_a, long long C_b);
+
 #endif
