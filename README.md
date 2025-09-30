@@ -1,0 +1,1 @@
+The repository is maintained during the 7th semester
